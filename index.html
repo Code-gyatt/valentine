@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Message For You 💌</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- 🎵 Audio elements MUST be inside body -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/bg-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <audio id="oof-sound" preload="auto">
+    <source src="assets/oof.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 🎵 Music toggle button -->
+  <button id="music-btn">🔊 Music</button>
+
+  <div class="envelope-container" onclick="openEnvelope()">
+    <div class="envelope">
+      <div class="flap"></div>
+      <div class="letter">💖</div>
+    </div>
+    <p class="open-text">Tap to open 💌</p>
+  </div>
+
+  <script>
+    function openEnvelope() {
+      window.location.href = "question.html";
+    }
+  </script>
+
+  <!-- ✅ JS must be LAST -->
+  <script src="js/music.js"></script>
+
+</body>
+</html>
